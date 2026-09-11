@@ -361,7 +361,7 @@ h1, h2, h3, h4 { font-family: var(--f-display); font-weight: 600; line-height: 1
 .hero__bg {
   position: absolute;
   inset: 0;
-  background: url("./hero.jpg") center/cover no-repeat;
+  background: url("https://thamaraikannan93.github.io/Restaurant/hero.jpg") center/cover no-repeat;
   transform: scale(1.08);
   animation: heroZoom 14s ease-out forwards;
 }
