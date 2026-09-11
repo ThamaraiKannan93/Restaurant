@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#14110e" />
+  <meta name="description"
+    content="Saffron &amp; Sage — a modern kitchen &amp; bar serving seasonal, fire-kissed cuisine in the heart of the city. Reserve your table today." />
+  <meta name="author" content="Saffron & Sage" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Saffron & Sage — Modern Kitchen & Bar" />
+  <meta property="og:description" content="Seasonal cuisine, crafted with fire. Reserve your table today." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/hero.jpg" />
+
+  <title>Saffron &amp; Sage — Modern Kitchen &amp; Bar</title>
+
+  <!-- Favicon (inline SVG data-URI so the folder is self-contained) -->
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2314110e'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='20' fill='%23c8963e' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E" />
+
+  <!-- Preconnect + Google Fonts (graceful system fallback if offline) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700&display=swap" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <!-- Skip link for keyboard / screen-reader users -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="site-header" id="siteHeader" data-header>
+    <div class="container site-header__inner">
+      <a href="#home" class="brand" aria-label="Saffron and Sage — home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2c2.5 3 4 5.5 4 8a4 4 0 1 1-8 0c0-2.5 1.5-5 4-8Z" />
+            <path d="M12 14v8M8.5 18.5 12 20l3.5-1.5" />
+          </svg>
+        </span>
+        <span class="brand__text">Saffron <em>&amp;</em> Sage</span>
+      </a>
+
+      <!-- Primary navigation -->
+      <nav class="nav" id="primaryNav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#home">Home</a></li>
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#menu">Menu</a></li>
+          <li><a class="nav__link" href="#specials">Specials</a></li>
+          <li><a class="nav__link" href="#gallery">Gallery</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+        <a href="#reserve" class="btn btn--gold nav__cta" data-nav-cta>Reserve a Table</a>
+      </nav>
+
+      <!-- Hamburger (mobile only) -->
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-controls="primaryNav"
+        aria-expanded="false" data-hamburger>
+        <span class="hamburger__box"><span class="hamburger__inner"></span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Dim overlay behind the open mobile drawer -->
+  <div class="nav-overlay" id="navOverlay" data-nav-overlay hidden></div>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero__bg" role="img" aria-label="Warmly lit dining room at Saffron and Sage"></div>
+      <div class="hero__overlay"></div>
+
+      <div class="container hero__content">
+        <p class="hero__eyebrow" data-reveal>Est. 2014 · Seasonal Kitchen &amp; Bar</p>
+        <h1 class="hero__title" data-reveal data-reveal-delay="1">
+          Seasonal cuisine,<br />crafted with <span class="text-gold">fire</span>.
+        </h1>
+        <p class="hero__lead" data-reveal data-reveal-delay="2">
+          A modern kitchen where open-flame cooking meets produce picked at its peak —
+          plated with intention, served with warmth.
+        </p>
+        <div class="hero__actions" data-reveal data-reveal-delay="3">
+          <a href="#reserve" class="btn btn--gold btn--lg">Book Your Table</a>
+          <a href="#menu" class="btn btn--ghost btn--lg">Explore the Menu</a>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll" aria-label="Scroll to about section">
+        <span class="hero__scroll-text">Scroll</span>
+        <span class="hero__scroll-line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="container about__grid">
+        <div class="about__media" data-reveal>
+          <img src="images/about.jpg" alt="Chef plating a dish in the Saffron and Sage kitchen"
+            width="1000" height="1200" loading="lazy" />
+          <div class="about__badge" aria-hidden="true">
+            <span class="about__badge-num">10</span>
+            <span class="about__badge-label">Years<br />of craft</span>
+          </div>
+        </div>
+
+        <div class="about__body">
+          <p class="eyebrow" data-reveal>Our Story</p>
+          <h2 class="section__title" data-reveal data-reveal-delay="1">
+            Rooted in the seasons, guided by the flame
+          </h2>
+          <p class="about__text" data-reveal data-reveal-delay="2">
+            Saffron &amp; Sage began with a simple belief — that the best meals are honest ones.
+            We work with local farms and fishers, letting each ingredient lead. Our wood-fired
+            hearth is the heart of the kitchen, coaxing depth and smoke from everything it touches.
+          </p>
+          <p class="about__text" data-reveal data-reveal-delay="2">
+            The result is food that feels both refined and unfussy: familiar flavours,
+            reimagined with care and a little theatre.
+          </p>
+
+          <!-- Animated counters -->
+          <ul class="stats" data-reveal data-reveal-delay="3">
+            <li class="stats__item">
+              <span class="stats__num" data-count="32">0</span><span class="stats__plus">+</span>
+              <span class="stats__label">Seasonal dishes</span>
+            </li>
+            <li class="stats__item">
+              <span class="stats__num" data-count="15">0</span><span class="stats__plus">k</span>
+              <span class="stats__label">Guests a year</span>
+            </li>
+            <li class="stats__item">
+              <span class="stats__num" data-count="8">0</span>
+              <span class="stats__label">Local partners</span>
+            </li>
+          </ul>
+
+          <a href="#reserve" class="btn btn--dark" data-reveal data-reveal-delay="3">Dine with us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MENU ============ -->
+    <section class="section section--cream menu" id="menu">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow" data-reveal>The Menu</p>
+          <h2 class="section__title" data-reveal data-reveal-delay="1">A taste of the table</h2>
+          <p class="section__sub" data-reveal data-reveal-delay="2">
+            Filter by course. Our menu shifts with the seasons, so expect a few happy surprises.
+          </p>
+        </header>
+
+        <!-- Filter buttons (toggle a shared list; aria-pressed, not tabs) -->
+        <div class="filters" role="group" aria-label="Filter menu by course" data-reveal>
+          <button class="filters__btn is-active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filters__btn" data-filter="starters" aria-pressed="false">Starters</button>
+          <button class="filters__btn" data-filter="mains" aria-pressed="false">Mains</button>
+          <button class="filters__btn" data-filter="desserts" aria-pressed="false">Desserts</button>
+        </div>
+
+        <!-- Menu grid -->
+        <ul class="menu__grid" id="menuGrid">
+          <li class="dish" data-category="starters" data-reveal>
+            <div class="dish__media">
+              <img src="images/dish-scallops.jpg" alt="Seared scallops with citrus" loading="lazy" />
+              <span class="dish__tag">Starter</span>
+            </div>
+            <div class="dish__info">
+              <div class="dish__row">
+                <h3 class="dish__name">Hearth-Seared Scallops</h3>
+                <span class="dish__price">$18</span>
+              </div>
+              <p class="dish__desc">Blood orange, brown butter, charred fennel.</p>
+            </div>
+          </li>
+
+          <li class="dish" data-category="starters" data-reveal>
+            <div class="dish__media">
+              <img src="images/dish-salad.jpg" alt="Garden salad bowl" loading="lazy" />
+              <span class="dish__tag">Starter</span>
+            </div>
+            <div class="dish__info">
+              <div class="dish__row">
+                <h3 class="dish__name">Heritage Garden Bowl</h3>
+                <span class="dish__price">$14</span>
+              </div>
+              <p class="dish__desc">Shaved roots, seeds, herb vinaigrette, aged pecorino.</p>
+            </div>
+          </li>
+
+          <li class="dish" data-category="mains" data-reveal>
+            <div class="dish__media">
+              <img src="images/dish-ribs.jpg" alt="Slow-cooked short rib" loading="lazy" />
+              <span class="dish__tag">Main</span>
+            </div>
+            <div class="dish__info">
+              <div class="dish__row">
+                <h3 class="dish__name">Wood-Fired Short Rib</h3>
+                <span class="dish__price">$32</span>
+              </div>
+              <p class="dish__desc">48-hour braise, smoked jus, burnt-honey parsnip.</p>
+            </div>
+          </li>
+
+          <li class="dish" data-category="mains" data-reveal>
+            <div class="dish__media">
+              <img src="images/dish-pasta.jpg" alt="Handmade pasta" loading="lazy" />
+              <span class="dish__tag">Main</span>
+            </div>
+            <div class="dish__info">
+              <div class="dish__row">
+                <h3 class="dish__name">Saffron Tagliatelle</h3>
+                <span class="dish__price">$26</span>
+              </div>
+              <p class="dish__desc">Hand-cut ribbons, brown crab, chilli, lemon.</p>
+            </div>
+          </li>
+
+          <li class="dish" data-category="mains" data-reveal>
+            <div class="dish__media">
+              <img src="images/dish-pizza.jpg" alt="Wood-fired flatbread" loading="lazy" />
+              <span class="dish__tag">Main</span>
+            </div>
+            <div class="dish__info">
+              <div class="dish__row">
+                <h3 class="dish__name">Charred Sage Flatbread</h3>
+                <span class="dish__price">$22</span>
+              </div>
+              <p class="dish__desc">Stone-baked, taleggio, wild mushroom, thyme.</p>
+            </div>
+          </li>
+
+          <li class="dish" data-category="desserts" data-reveal>
+            <div class="dish__media">
+              <img src="images/dish-cheesecake.jpg" alt="Baked dessert" loading="lazy" />
+              <span class="dish__tag">Dessert</span>
+            </div>
+            <div class="dish__info">
+              <div class="dish__row">
+                <h3 class="dish__name">Burnt Vanilla Cheesecake</h3>
+                <span class="dish__price">$12</span>
+              </div>
+              <p class="dish__desc">Basque-style, salted caramel, sea salt.</p>
+            </div>
+          </li>
+
+          <li class="dish" data-category="desserts" data-reveal>
+            <div class="dish__media">
+              <img src="images/dish-dessert.jpg" alt="Stacked dessert" loading="lazy" />
+              <span class="dish__tag">Dessert</span>
+            </div>
+            <div class="dish__info">
+              <div class="dish__row">
+                <h3 class="dish__name">Honeycomb Stack</h3>
+                <span class="dish__price">$13</span>
+              </div>
+              <p class="dish__desc">Griddled cake, whipped mascarpone, wild honey.</p>
+            </div>
+          </li>
+
+          <li class="dish" data-category="starters" data-reveal>
+            <div class="dish__media">
+              <img src="images/dish-bowl.jpg" alt="Seasonal small plate" loading="lazy" />
+              <span class="dish__tag">Starter</span>
+            </div>
+            <div class="dish__info">
+              <div class="dish__row">
+                <h3 class="dish__name">Ember Roast Squash</h3>
+                <span class="dish__price">$15</span>
+              </div>
+              <p class="dish__desc">Whipped feta, dukkah, pomegranate, mint.</p>
+            </div>
+          </li>
+        </ul>
+
+        <p class="menu__note" data-reveal>
+          Dietary needs? Our kitchen happily adapts — just ask your server.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ SPECIALS CAROUSEL ============ -->
+    <section class="section section--dark specials" id="specials">
+      <div class="container">
+        <header class="section__head section__head--light">
+          <p class="eyebrow eyebrow--gold" data-reveal>Chef's Table</p>
+          <h2 class="section__title" data-reveal data-reveal-delay="1">This week's specials</h2>
+          <p class="section__sub" data-reveal data-reveal-delay="2">
+            A rotating showcase from the pass — here today, gone when the produce runs out.
+          </p>
+        </header>
+
+        <div class="carousel" data-carousel>
+          <div class="carousel__viewport">
+            <ul class="carousel__track" data-carousel-track>
+              <li class="slide">
+                <figure class="slide__figure">
+                  <img src="images/dish-flatlay.jpg" alt="Seasonal tasting spread" loading="lazy" />
+                </figure>
+                <div class="slide__body">
+                  <span class="slide__kicker">Tasting Board</span>
+                  <h3 class="slide__title">The Harvest Spread</h3>
+                  <p class="slide__text">
+                    A generous board of the day's best — fire-roasted vegetables, house
+                    charcuterie, warm sourdough and whipped cultured butter.
+                  </p>
+                  <p class="slide__price">$34 · serves two</p>
+                </div>
+              </li>
+
+              <li class="slide">
+                <figure class="slide__figure">
+                  <img src="images/dish-scallops.jpg" alt="Seared scallops special" loading="lazy" />
+                </figure>
+                <div class="slide__body">
+                  <span class="slide__kicker">From the Coast</span>
+                  <h3 class="slide__title">Day-Boat Scallops</h3>
+                  <p class="slide__text">
+                    Hand-dived scallops seared over embers, finished with brown butter,
+                    blood orange and a whisper of charred fennel.
+                  </p>
+                  <p class="slide__price">$28</p>
+                </div>
+              </li>
+
+              <li class="slide">
+                <figure class="slide__figure">
+                  <img src="images/dish-ribs.jpg" alt="Short rib special" loading="lazy" />
+                </figure>
+                <div class="slide__body">
+                  <span class="slide__kicker">From the Hearth</span>
+                  <h3 class="slide__title">Smoked Short Rib</h3>
+                  <p class="slide__text">
+                    Braised for two days then kissed by flame, resting on burnt-honey
+                    parsnip with a deep, smoky jus.
+                  </p>
+                  <p class="slide__price">$36</p>
+                </div>
+              </li>
+
+              <li class="slide">
+                <figure class="slide__figure">
+                  <img src="images/dish-cheesecake.jpg" alt="Dessert special" loading="lazy" />
+                </figure>
+                <div class="slide__body">
+                  <span class="slide__kicker">Sweet Finish</span>
+                  <h3 class="slide__title">Burnt Vanilla Cheesecake</h3>
+                  <p class="slide__text">
+                    Our Basque-style classic — caramelised edges, silky centre,
+                    salted caramel and a crack of sea salt.
+                  </p>
+                  <p class="slide__price">$14</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Controls -->
+          <button class="carousel__btn carousel__btn--prev" data-carousel-prev aria-label="Previous special">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6" /></svg>
+          </button>
+          <button class="carousel__btn carousel__btn--next" data-carousel-next aria-label="Next special">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6" /></svg>
+          </button>
+
+          <!-- Dots + pause/play -->
+          <div class="carousel__controls">
+            <div class="carousel__dots" data-carousel-dots role="group" aria-label="Choose slide"></div>
+            <button class="rotator__pause" data-carousel-pause aria-pressed="false" aria-label="Pause specials slideshow">
+              <svg class="icon-pause" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+              <svg class="icon-play" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY (lightbox) ============ -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow" data-reveal>Gallery</p>
+          <h2 class="section__title" data-reveal data-reveal-delay="1">A room to remember</h2>
+          <p class="section__sub" data-reveal data-reveal-delay="2">Tap any image to view it up close.</p>
+        </header>
+
+        <ul class="gallery__grid" data-gallery>
+          <li class="gallery__item gallery__item--tall" data-reveal>
+            <button class="gallery__open" data-gallery-item data-full="images/interior.jpg"
+              data-caption="The main dining room at dusk">
+              <img src="images/interior.jpg" alt="Warmly lit dining room" loading="lazy" />
+              <span class="gallery__zoom" aria-hidden="true">+</span>
+            </button>
+          </li>
+          <li class="gallery__item" data-reveal data-reveal-delay="1">
+            <button class="gallery__open" data-gallery-item data-full="images/gallery-2.jpg"
+              data-caption="Fresh plates leaving the pass">
+              <img src="images/gallery-2.jpg" alt="A plated dish" loading="lazy" />
+              <span class="gallery__zoom" aria-hidden="true">+</span>
+            </button>
+          </li>
+          <li class="gallery__item" data-reveal data-reveal-delay="2">
+            <button class="gallery__open" data-gallery-item data-full="images/gallery-1.jpg"
+              data-caption="Seasonal small plates">
+              <img src="images/gallery-1.jpg" alt="Seasonal small plate" loading="lazy" />
+              <span class="gallery__zoom" aria-hidden="true">+</span>
+            </button>
+          </li>
+          <li class="gallery__item" data-reveal>
+            <button class="gallery__open" data-gallery-item data-full="images/dish-pizza.jpg"
+              data-caption="Stone-baked flatbread">
+              <img src="images/dish-pizza.jpg" alt="Wood-fired flatbread" loading="lazy" />
+              <span class="gallery__zoom" aria-hidden="true">+</span>
+            </button>
+          </li>
+          <li class="gallery__item gallery__item--wide" data-reveal data-reveal-delay="1">
+            <button class="gallery__open" data-gallery-item data-full="images/hero.jpg"
+              data-caption="An evening at Saffron & Sage">
+              <img src="images/hero.jpg" alt="The restaurant at night" loading="lazy" />
+              <span class="gallery__zoom" aria-hidden="true">+</span>
+            </button>
+          </li>
+          <li class="gallery__item" data-reveal data-reveal-delay="2">
+            <button class="gallery__open" data-gallery-item data-full="images/gallery-3.jpg"
+              data-caption="House favourite">
+              <img src="images/gallery-3.jpg" alt="A signature dish" loading="lazy" />
+              <span class="gallery__zoom" aria-hidden="true">+</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ RESERVATION ============ -->
+    <section class="section section--cream reserve" id="reserve">
+      <div class="container reserve__grid">
+        <div class="reserve__intro">
+          <p class="eyebrow" data-reveal>Reservations</p>
+          <h2 class="section__title" data-reveal data-reveal-delay="1">Reserve your table</h2>
+          <p class="reserve__text" data-reveal data-reveal-delay="2">
+            We hold a limited number of tables each evening. Book ahead to secure yours —
+            we can't wait to cook for you.
+          </p>
+          <ul class="reserve__facts" data-reveal data-reveal-delay="3">
+            <li><strong>Dinner</strong> Tue–Sun, 5:30–11:00 pm</li>
+            <li><strong>Lunch</strong> Fri–Sun, 12:00–3:00 pm</li>
+            <li><strong>Groups</strong> of 7+? Call <a href="tel:+15550142020">(555) 014‑2020</a></li>
+          </ul>
+        </div>
+
+        <form class="reserve__form card" id="reserveForm" novalidate>
+          <div class="field">
+            <label for="rName">Full name</label>
+            <input type="text" id="rName" name="name" placeholder="Jordan Rivera" required aria-describedby="rName-error" />
+            <span class="field__error" id="rName-error" role="alert" data-error-for="rName"></span>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="rDate">Date</label>
+              <input type="date" id="rDate" name="date" required aria-describedby="rDate-error" />
+              <span class="field__error" id="rDate-error" role="alert" data-error-for="rDate"></span>
+            </div>
+            <div class="field">
+              <label for="rTime">Time</label>
+              <input type="time" id="rTime" name="time" value="19:00" required aria-describedby="rTime-error" />
+              <span class="field__error" id="rTime-error" role="alert" data-error-for="rTime"></span>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="rGuests">Guests</label>
+              <select id="rGuests" name="guests" required aria-describedby="rGuests-error">
+                <option value="">Select…</option>
+                <option>1</option><option selected>2</option><option>3</option>
+                <option>4</option><option>5</option><option>6</option>
+              </select>
+              <span class="field__error" id="rGuests-error" role="alert" data-error-for="rGuests"></span>
+            </div>
+            <div class="field">
+              <label for="rPhone">Phone</label>
+              <input type="tel" id="rPhone" name="phone" placeholder="(555) 000‑0000" required aria-describedby="rPhone-error" />
+              <span class="field__error" id="rPhone-error" role="alert" data-error-for="rPhone"></span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="rNotes">Special requests <span class="field__opt">(optional)</span></label>
+            <textarea id="rNotes" name="notes" rows="2" placeholder="Allergies, celebrations, seating…"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--gold btn--block btn--lg">Request Reservation</button>
+          <p class="reserve__fineprint">We'll confirm by phone or email within the hour.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section testimonials" aria-label="What guests say">
+      <div class="container">
+        <div class="quotes" data-quotes>
+          <svg class="quotes__mark" viewBox="0 0 24 24" aria-hidden="true" width="46" height="46" fill="currentColor">
+            <path d="M9 7H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h2v2H5v2h4v-6H6V9h3V7Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h2v2h-2v2h4v-6h-3V9h3V7Z"/>
+          </svg>
+          <ul class="quotes__track" data-quotes-track>
+            <li class="quote is-active">
+              <blockquote>"Every plate felt like a small celebration. The short rib alone is worth the trip."</blockquote>
+              <cite>— Amara O., food writer</cite>
+            </li>
+            <li class="quote">
+              <blockquote>"Warm, unpretentious and genuinely delicious. Our new anniversary spot."</blockquote>
+              <cite>— Daniel &amp; Priya</cite>
+            </li>
+            <li class="quote">
+              <blockquote>"The open hearth turns dinner into theatre. We left already planning our return."</blockquote>
+              <cite>— The City Table</cite>
+            </li>
+          </ul>
+          <div class="quotes__controls">
+            <div class="quotes__dots" data-quotes-dots role="group" aria-label="Choose testimonial"></div>
+            <button class="rotator__pause" data-quotes-pause aria-pressed="false" aria-label="Pause testimonials slideshow">
+              <svg class="icon-pause" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+              <svg class="icon-play" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER / CONTACT ============ -->
+  <footer class="site-footer" id="contact">
+    <div class="container site-footer__grid">
+      <div class="site-footer__col site-footer__brand">
+        <a href="#home" class="brand brand--light">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2c2.5 3 4 5.5 4 8a4 4 0 1 1-8 0c0-2.5 1.5-5 4-8Z" />
+              <path d="M12 14v8M8.5 18.5 12 20l3.5-1.5" />
+            </svg>
+          </span>
+          <span class="brand__text">Saffron <em>&amp;</em> Sage</span>
+        </a>
+        <p class="site-footer__blurb">
+          Seasonal cuisine, crafted with fire. Open-flame cooking in the heart of the city.
+        </p>
+        <div class="social" aria-label="Social links">
+          <a href="#" class="social__link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" class="social__link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M13 22v-8h2.7l.4-3H13V9.1c0-.9.3-1.5 1.6-1.5H16V5c-.3 0-1.2-.1-2.2-.1-2.2 0-3.8 1.3-3.8 3.8V11H7.5v3H10v8h3Z"/></svg>
+          </a>
+          <a href="#" class="social__link" aria-label="X">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M17.5 3h3l-6.6 7.5L21.7 21h-6l-4.3-5.6L6.3 21H3.3l7-8L2.6 3h6.1l3.9 5.2L17.5 3Zm-1 16h1.6L7.6 4.7H5.9L16.5 19Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="site-footer__col">
+        <h3 class="site-footer__title">Visit</h3>
+        <address class="site-footer__addr">
+          128 Ember Lane<br />Riverside Quarter<br />Metropolis, 10021
+        </address>
+        <p><a href="tel:+15550142020">(555) 014‑2020</a></p>
+        <p><a href="mailto:hello@saffronandsage.test">hello@saffronandsage.test</a></p>
+      </div>
+
+      <div class="site-footer__col">
+        <h3 class="site-footer__title">Hours</h3>
+        <ul class="hours">
+          <li><span>Mon</span><span>Closed</span></li>
+          <li><span>Tue – Thu</span><span>5:30 – 11 pm</span></li>
+          <li><span>Fri – Sat</span><span>12 – 11 pm</span></li>
+          <li><span>Sun</span><span>12 – 9 pm</span></li>
+        </ul>
+      </div>
+
+      <div class="site-footer__col">
+        <h3 class="site-footer__title">Newsletter</h3>
+        <p class="site-footer__blurb">Seasonal menus and events, once a month. No spam.</p>
+        <form class="newsletter" id="newsletterForm" novalidate>
+          <label class="sr-only" for="nlEmail">Email address</label>
+          <input type="email" id="nlEmail" name="email" placeholder="you@email.com" required aria-describedby="nlMsg" />
+          <button type="submit" class="btn btn--gold" aria-label="Subscribe">→</button>
+        </form>
+        <p class="newsletter__msg" id="nlMsg" data-newsletter-msg aria-live="polite"></p>
+      </div>
+    </div>
+
+    <div class="container site-footer__bar">
+      <p>© <span data-year>2026</span> Saffron &amp; Sage. Crafted as a front-end demo.</p>
+      <p class="site-footer__credits">Photography via Unsplash.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="to-top" id="toTop" aria-label="Back to top" data-to-top>
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7" /></svg>
+  </button>
+
+  <!-- ============ MODAL: reservation confirmation ============ -->
+  <div class="modal" id="confirmModal" data-modal hidden>
+    <div class="modal__backdrop" data-modal-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="confirmTitle" tabindex="-1">
+      <button class="modal__close" data-modal-close aria-label="Close">&times;</button>
+      <div class="modal__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
+      </div>
+      <h2 class="modal__title" id="confirmTitle">Table requested!</h2>
+      <p class="modal__text" data-confirm-text>Thank you — we've received your request.</p>
+      <button class="btn btn--gold" data-modal-close>Lovely, thanks</button>
+    </div>
+  </div>
+
+  <!-- ============ MODAL: gallery lightbox ============ -->
+  <div class="lightbox" id="lightbox" data-lightbox role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <button class="lightbox__close" data-lightbox-close aria-label="Close">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" data-lightbox-prev aria-label="Previous image">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6" /></svg>
+    </button>
+    <figure class="lightbox__figure">
+      <img src="" alt="" data-lightbox-img />
+      <figcaption data-lightbox-caption></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" data-lightbox-next aria-label="Next image">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6" /></svg>
+    </button>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
